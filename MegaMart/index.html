@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MegaMart — современный интернет-магазин техники, гаджетов и аксессуаров.">
+  <meta name="theme-color" content="#080d18">
+  <title>Saidakbar — магазин технологий</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    Бесплатная доставка при заказе от 499 сомони
+    <a href="#catalog">Выбрать товары <span aria-hidden="true">→</span></a>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#" aria-label="MegaMart — главная">
+        <span class="logo-mark">S</span><span>Saidakbar<span class="logo-accent">Shop</span><small>TECHNOLOGY STORE</small></span>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav">
+        <a class="active" href="#">Главная</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn search-toggle" id="searchToggle" aria-label="Поиск"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg></button>
+        <button class="icon-btn cart-trigger" id="cartTrigger" aria-label="Открыть корзину"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"></path><circle cx="10" cy="21" r="1"></circle><circle cx="18" cy="21" r="1"></circle></svg><span class="cart-count" id="cartCount">0</span></button>
+        <a class="header-cta" href="#catalog">Покупать <span>↗</span></a>
+      </div>
+    </div>
+    <div class="search-panel" id="searchPanel">
+      <div class="container search-inner">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+        <input id="searchInput" type="search" placeholder="Найти смартфон, ноутбук, аксессуар..." autocomplete="off">
+        <button id="searchClose" aria-label="Закрыть поиск">✕</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> ТЕХНОЛОГИИ БУДУЩЕГО УЖЕ ЗДЕСЬ</div>
+          <h1>Технологии,<br>которые <span>двигают</span><br>тебя вперёд.</h1>
+          <p>Открой мир современных гаджетов. Выбирай умнее, покупай удобнее и получай больше от каждой технологии.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#catalog">Смотреть каталог <span>↗</span></a>
+            <a class="btn btn-ghost" href="#advantages"><span class="play-icon">▶</span> Почему MegaMart</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>2 500<span>+</span></strong><small>товаров в каталоге</small></div>
+            <div><strong>12<span>k</span></strong><small>довольных клиентов</small></div>
+            <div><strong>4.9<span>/5</span></strong><small>средняя оценка</small></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+          <div class="visual-glow"></div>
+          <div class="hero-product">
+            <div class="product-chip">NEW GENERATION <span>✦</span></div>
+            <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=900&q=85" alt="Современный смартфон">
+            <div class="floating-card floating-top"><span class="float-icon">✦</span><div><b>Smart choice</b><small>Выбор технологий</small></div></div>
+            <div class="floating-card floating-bottom"><span class="signal-icon">⌁</span><div><b>Только оригинал</b><small>Качество под контролем</small></div></div>
+          </div>
+          <div class="hero-side-label">INNOVATION / 2026</div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>ПРОКРУТИ ВНИЗ</span><span class="scroll-line"></span><span>01 — 04</span></div>
+    </section>
+
+    <section class="categories section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> НАЙДИ СВОЁ</div><h2>Категории <span>товаров</span></h2></div>
+          <a class="text-link" href="#catalog">Весь каталог <span>↗</span></a>
+        </div>
+        <div class="category-grid">
+          <button class="category-card category-large" data-category="Смартфоны">
+            <div class="category-text"><small>01 / MOBILE</small><h3>Смартфоны</h3><span>Открыть категорию ↗</span></div>
+            <img src="https://images.unsplash.com/photo-151 smartphones?auto=format&fit=crop&w=600&q=80" alt="Смартфон" onerror="this.src='https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80'">
+          </button>
+          <button class="category-card" data-category="Ноутбуки"><div class="category-text"><small>02 / COMPUTERS</small><h3>Ноутбуки</h3><span>Открыть категорию ↗</span></div><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80" alt="Ноутбук"></button>
+          <button class="category-card" data-category="Аксессуары"><div class="category-text"><small>03 / ACCESSORIES</small><h3>Аксессуары</h3><span>Открыть категорию ↗</span></div><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Наушники"></button>
+          <button class="category-card" data-category="Гаджеты"><div class="category-text"><small>04 / SMART LIFE</small><h3>Умные гаджеты</h3><span>Открыть категорию ↗</span></div><img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=600&q=80" alt="Умные часы"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section section-pad" id="catalog">
+      <div class="container">
+        <div class="section-heading catalog-heading">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> ВЫБОР ПОКУПАТЕЛЕЙ</div><h2>Популярные <span>товары</span></h2></div>
+          <div class="catalog-tools">
+            <div class="filter-tabs" id="filterTabs">
+              <button class="filter-tab active" data-filter="Все">Все</button>
+              <button class="filter-tab" data-filter="Смартфоны">Смартфоны</button>
+              <button class="filter-tab" data-filter="Ноутбуки">Ноутбуки</button>
+              <button class="filter-tab" data-filter="Аксессуары">Аксессуары</button>
+            </div>
+            <select id="sortSelect" aria-label="Сортировка товаров"><option value="popular">Сначала популярные</option><option value="low">Сначала дешевле</option><option value="high">Сначала дороже</option></select>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="catalog-more"><button class="btn btn-outline" id="showAllBtn">Показать все товары <span>↓</span></button></div>
+      </div>
+    </section>
+
+    <section class="promo-section">
+      <div class="container promo-card">
+        <div class="promo-copy"><div class="eyebrow"><span class="eyebrow-line"></span> ВЫГОДА НА ТЕХНОЛОГИИ</div><h2>Умные покупки.<br><span>Большие возможности.</span></h2><p>Подпишись на новости Saidakbar shop и узнавай первым о новых поступлениях и специальных предложениях.</p><form class="subscribe-form" id="subscribeForm"><input type="email" placeholder="Твой email" required><button type="submit">Подписаться <span>↗</span></button></form><small class="form-note" id="subscribeMessage">Никакого спама. Только полезные новости.</small></div>
+        <div class="promo-art"><div class="promo-ring"></div><div class="promo-circle"><span>MEGA</span><b>DEAL</b><small>TECH / SMART / LIFE</small></div><div class="promo-spark spark-one">✦</div><div class="promo-spark spark-two">✧</div></div>
+      </div>
+    </section>
+
+    <section class="advantages section-pad" id="advantages">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> ПОЧЕМУ МЫ</div><h2>Покупать легко.<br><span>Пользоваться приятно.</span></h2></div><p class="heading-description">Мы продумали каждую деталь, чтобы технологии приносили радость, а покупки не отнимали время.</p></div>
+        <div class="advantages-grid">
+          <article class="advantage-card"><span class="adv-icon">↗</span><small>01 / DELIVERY</small><h3>Быстрая доставка</h3><p>Доставляем заказы бережно и в удобное для тебя время.</p></article>
+          <article class="advantage-card"><span class="adv-icon">◇</span><small>02 / QUALITY</small><h3>Проверенное качество</h3><p>Тщательно отбираем товары и следим за качеством.</p></article>
+          <article class="advantage-card"><span class="adv-icon">◎</span><small>03 / SUPPORT</small><h3>Поддержка рядом</h3><p>Поможем с выбором и ответим на вопросы до и после покупки.</p></article>
+          <article class="advantage-card"><span class="adv-icon">⌁</span><small>04 / PAYMENT</small><h3>Удобная оплата</h3><p>Выбирай подходящий способ оплаты при оформлении заказа.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section-pad" id="reviews">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> НАШИ ПОКУПАТЕЛИ</div><h2>Слова, которые <span>важны.</span></h2></div><div class="review-arrows"><button id="reviewPrev" aria-label="Предыдущий отзыв">←</button><button id="reviewNext" aria-label="Следующий отзыв">→</button></div></div>
+        <div class="review-card" id="reviewCard"><div class="review-stars">★★★★★</div><blockquote id="reviewText">«Удобный сайт, хороший выбор и быстрая обратная связь. Заказ оформил за пару минут — всё понятно и без лишних шагов.»</blockquote><div class="review-author"><div class="avatar" id="reviewAvatar">АК</div><div><b id="reviewName">Алишер К.</b><small id="reviewMeta">Покупатель Saidakbar shop</small></div></div><span class="quote-mark">“</span></div>
+      </div>
+    </section>
+
+    <section class="contact-strip" id="contacts"><div class="container contact-inner"><div><div class="eyebrow"><span class="eyebrow-line"></span> ЕСТЬ ВОПРОСЫ?</div><h2>Давай подберём <span>технологии.</span></h2><p>Напиши нам — поможем найти то, что действительно подходит.</p></div><a class="btn btn-primary" href="https://t.me/" target="_blank" rel="noopener">Связаться с нами <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="logo" href="#"><span class="logo-mark">M</span><span>Saidakbar<span class="logo-accent">Shop</span><small>TECHNOLOGY STORE</small></span></a><p>Технологии для жизни.<br>Удобный выбор каждый день.</p><div class="social-links"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Telegram">tg</a><a href="#" aria-label="Facebook">fb</a></div></div>
+      <div class="footer-column"><h4>Магазин</h4><a href="#catalog">Каталог</a><a href="#catalog">Новинки</a><a href="#catalog">Популярное</a><a href="#catalog">Спецпредложения</a></div>
+      <div class="footer-column"><h4>Покупателям</h4><a href="#advantages">Доставка и оплата</a><a href="#advantages">Гарантия</a><a href="#contacts">Помощь</a><a href="#reviews">Отзывы</a></div>
+      <div class="footer-column footer-contact"><h4>Контакты</h4><a href="tel:+992000000000">+992 00 000 00 00</a><a href="mailto:hello@megamart.tj">hello@megamart.tj</a><span>Пн–Сб, 09:00–18:00</span><span>Таджикистан</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 SaidakbarShop. Все права защищены.</span><span>Создано с вниманием к деталям <b>✦</b></span><a href="#">Политика конфиденциальности</a></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Корзина" aria-hidden="true">
+    <div class="drawer-head"><div><small>ТВОЙ ВЫБОР</small><h3>Корзина <span id="drawerCount">(0)</span></h3></div><button class="close-btn" id="cartClose" aria-label="Закрыть корзину">✕</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart"><span>◇</span><h4>Пока здесь пусто</h4><p>Добавь товары, которые тебе понравились.</p></div></div>
+    <div class="cart-footer"><div class="cart-total"><span>Итого</span><strong id="cartTotal">0 сомони</strong></div><button class="btn btn-primary checkout-btn" id="checkoutBtn">Оформить заказ <span>↗</span></button><small>Оформление заказа — демонстрационный режим.</small></div>
+  </aside>
+
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true"><button class="modal-close" id="modalClose" aria-label="Закрыть">✕</button><div id="modalContent"></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
